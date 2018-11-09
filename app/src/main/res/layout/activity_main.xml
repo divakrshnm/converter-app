@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/input_suhu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Masukan Suhu"
+        android:inputType="number"/>
+
+        <RadioGroup
+            android:id="@+id/list_satuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp">
+
+            <RadioButton
+                android:id="@+id/reamur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reamur"/>
+
+            <RadioButton
+                android:id="@+id/farenheit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Farenheit"/>
+
+            <RadioButton
+                android:id="@+id/kelvin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelvin"/>
+
+        </RadioGroup>
+
+    <Button
+        android:id="@+id/tombol_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="Convert"/>
+
+</LinearLayout>
